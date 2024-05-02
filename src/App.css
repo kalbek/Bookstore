@@ -1,0 +1,44 @@
+:root {
+  --blackbg: #2a2c2e;
+  --crayola: #F4CE47;
+}
+
+header {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-spaced {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-spaced-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+header nav ul li:hover {
+  scale: 105%;
+  cursor: pointer;
+  color: var(--crayola);
+}
+
+header .right ul li {
+  width: 20px;
+  height: 20px;
+}
+
+header .right ul li:hover {
+  scale: 115%;
+  cursor: pointer;
+}

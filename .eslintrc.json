@@ -1,0 +1,44 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/label-has-associated-control */
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "import/no-unresolved": "off",
+    "linebreak-style": "off",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/prop-types": "off",
+    "quotes": "off",
+    "no-shadow": "off"
+  },
+  "overrides": [
+    {
+      // feel free to replace with your preferred file pattern - eg. 'src/**/*Slice.js' or 'redux/**/*Slice.js'
+      "files": ["src/**/*Slice.js"],
+      // avoid state param assignment
+      "rules": { "no-param-reassign": ["error", { "props": false }] }
+    }
+  ],
+  "ignorePatterns": ["dist/", "build/"]
+}
